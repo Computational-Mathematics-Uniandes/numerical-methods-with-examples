@@ -72,12 +72,11 @@ ajuste=Alg.regresion(x,y,1,(1,1))
 Alg.dibujo_reg(x,y,1,(1,1),0,0,'(Matricial)sin(θ) refl vs sin(θ) inc','sin(θ) inc','sin(θ) refl','ley de snell',a)
 plt.savefig("imagen 3 (Linealización y regresión lineal metódo matricial).png")
 print('Metódo matricial')
-print('El ajuste es y=',ajuste[0][1],'x+',ajuste[0][0])
+print('El ajuste es y=',ajuste[0][0],'x+',ajuste[0][1])
 print('(se estima la matriz de covarianza ver conclusiones)')
 print('Incertidumbre m=+-',ajuste[1][0])
 print('Incertidumbre b=+-',ajuste[1][1])
 print('El coeficiente de correlación ajustado(ver conclusiones) es:',ajuste[2])
-
 #Ajuste por scipy
 print(23*'-')
 print('Metódo scipy (curve fit)')
